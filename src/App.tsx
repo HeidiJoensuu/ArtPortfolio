@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Image, Sticky } from "semantic-ui-react"
+import headline from "./assets/headline.png"
+import PictureLibrary from "./pictureLibrary";
+import { createRef } from "react";
 
-function App() {
+
+const App = () => {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Image src={headline} style={{width: "100%", maxHeight: "150px", marginBottom: "50px"}} centered fixed={'top'}/>
       </header>
+      <PictureLibrary />
     </div>
   );
 }
