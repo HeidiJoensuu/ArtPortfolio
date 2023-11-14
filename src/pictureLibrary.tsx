@@ -71,7 +71,7 @@ const PictureLibrary = () => {
                         :<List.Item key={item.header} style={{position:"absolute", height: "100%"}}>   
                                 <Grid columns={2}>
                                     <Grid.Column width={8}>
-                                        <Image src={item.pic} style={{width: "auto", height:"auto", maxHeight: "800px"}} fluid/>
+                                        <Image src={item.pic} style={{width: "auto", height:"auto", maxHeight: "550px"}} fluid/>
                                     </Grid.Column>
                                     <Grid.Column width={8}>
                                         <Header as='h1' style={{color: "white"}}>{item.header}</Header>
